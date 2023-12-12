@@ -3,3 +3,10 @@
 
 
 /* we can use font this way or customize the tailwind config */
+
+/* setting btn class to result it  */
+
+.outlineBtn{
+    @apply px-4 py-4 bg-transparent border text-primary border-primary rounded
+     hover:bg-primary hover:text-white transition-all duration-300;
+}
