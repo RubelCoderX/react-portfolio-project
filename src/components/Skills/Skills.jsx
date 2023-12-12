@@ -16,7 +16,7 @@ const skills =[
 const Skills = () => {
     return (
         <div className='lg:mx-12 mx-4 py-32'>
-            <div className='text-headingColor mb-20'>
+            <div className='text-headingColor mb-20 ml-5'>
                 <p className='text-xl font-semibold mb-5'>My Skills</p>
                 <h2 className='md:text-5xl text-4xl font-bold'>My Expertise</h2>
             </div>

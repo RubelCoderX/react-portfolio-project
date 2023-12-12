@@ -1,0 +1,12 @@
+[
+    {
+        "id" : 1, "name" : "Ahuse", "description" : "Ahuse is a dynamic and innovative website project .At Ahuse, we understand the importance of finding the perfect space to call home. Our platform connects renters with a diverse range of high-quality rental properties, ensuring a seamless and convenient housing experience", "image": "/src/assets/project-6.png"
+    },
+    {
+        "id" : 2, "name" : "MarketZone", "description" : "We bring you a curated selection of high-quality products, from the latest fashion trends to cutting-edge electronics. Our user-friendly platform ensures easy navigation, secure transactions, and swift deliveries, making your online shopping journey enjoyable and hassle-free.", "image": "/src/assets/project-4.png"
+    },
+    {
+        "id" : 3, "name" : "University", "description" : "University Hub is an innovative online platform designed to serve as a comprehensive resource for students, faculty, and prospective members of our academic community. With user-friendly navigation, the website offers a seamless experience, providing access to essential information about courses, programs, admissions, and campus life.", "image": "/src/assets/project-5.png"
+    }
+]
+
