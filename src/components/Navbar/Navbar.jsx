@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from '../../assets/logo.svg';
 // import menuicon from react icons
 import { HiMenu } from 'react-icons/hi';
+import {Link} from 'react-scroll';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,15 +29,15 @@ const Navbar = () => {
                 <div className='flex items-center justify-between '>
                         <div className='cursor-pointer'>
                                     {/* for logo */}
-                                    <img src={logo} alt=""  className='h-10'/>
+                            <img src={logo} alt=""  className='h-10'/>
                         </div>
                         
                         <div className='lg:flex items-center gap-3 hidden text-body text-lg'>
-                            <a className='block px-4 cursor-pointer hover:text-gray-400 ' href="/">Home</a>
-                            <a className='block px-4 cursor-pointer hover:text-gray-400 ' href="/">Skills</a>
-                            <a className='block px-4 cursor-pointer hover:text-gray-400 ' href="/">About Me</a>
-                            <a className='block px-4 cursor-pointer hover:text-gray-400 ' href="/">Portfolio</a>
-                            <a className='block px-4 cursor-pointer hover:text-gray-400 ' href="/">Testimonials</a>
+                            <Link spy={true} activeClass='active' smooth={true} offset={-100} className='block px-4 cursor-pointer hover:text-gray-400 ' to="home">Home</Link>
+                            <Link spy={true} activeClass='active' smooth={true} offset={-100}  className='block px-4 cursor-pointer hover:text-gray-400 ' to="skills">Skills</Link>
+                            <Link spy={true} activeClass='active' smooth={true} offset={-100}  className='block px-4 cursor-pointer hover:text-gray-400 ' to="about">About Me</Link>
+                            <Link spy={true} activeClass='active' smooth={true} offset={-100}  className='block px-4 cursor-pointer hover:text-gray-400 ' to="portfolio">Portfolio</Link>
+                            <Link spy={true} activeClass='active' smooth={true} offset={-100}  className='block px-4 cursor-pointer hover:text-gray-400 ' to="testimonials">Testimonials</Link>
                         </div>
                             {/* contact me btn */}
                         <div className='lg:block hidden'> 
@@ -51,11 +52,11 @@ const Navbar = () => {
                 {/* menu items for small devicess */}
                 {
                     isMenuOpen && <div className='mt-4 p-4 bg-body rounded-lg text-white text-lg'>
-                            <a className='block px-4 py-2 cursor-pointer text-primary hover:text-gray-400 ' href="/">Home</a>
-                            <a className='block px-4 py-2 cursor-pointer hover:text-gray-400 ' href="/">Skills</a>
-                            <a className='block px-4 py-2 cursor-pointer hover:text-gray-400 ' href="/">About Me</a>
-                            <a className='block px-4 py-2 cursor-pointer hover:text-gray-400 ' href="/">Portfolio</a>
-                            <a className='block px-4 py-2 cursor-pointer hover:text-gray-400 ' href="/">Testimonials</a>
+                            <Link className='block px-4 py-2 cursor-pointer text-primary hover:text-gray-400'to="/home">Home</Link>
+                            <Link className='block px-4 py-2 cursor-pointer hover:text-gray-400 'to="/skills">Skills</Link>
+                            <Link className='block px-4 py-2 cursor-pointer hover:text-gray-400 'to="/about">About Me</Link>
+                            <Link className='block px-4 py-2 cursor-pointer hover:text-gray-400 'to="/portfolio">Portfolio</Link>
+                            <Link className='block px-4 py-2 cursor-pointer hover:text-gray-400 'to="/testimonials">Testimonials</Link>
                     </div> 
                 }
             </nav>

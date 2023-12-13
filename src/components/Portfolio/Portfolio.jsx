@@ -10,7 +10,7 @@ const Portfolio = () => {
         .then(data => setProjects(data))
     },[]);
     return (
-        <div className='lg:mx-12 mx-4 my-32'>
+        <div className='lg:mx-12 mx-4 my-32' id='portfolio'>
             <div className='flex flex-col md:flex-row justify-between md:items-center mb-10 gap-8'>
                 <div className='text-headingColor '>
                     <p className='text-xl font-semibold mb-5'>Recent Project</p>
