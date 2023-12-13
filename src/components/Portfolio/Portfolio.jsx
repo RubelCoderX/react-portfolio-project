@@ -11,7 +11,7 @@ const Portfolio = () => {
     },[]);
     return (
         <div className='lg:mx-12 mx-4 my-32'>
-            <div className='flex flex-col-1 md:flex-row justify-between items-center mb-10'>
+            <div className='flex flex-col md:flex-row justify-between md:items-center mb-10 gap-8'>
                 <div className='text-headingColor '>
                     <p className='text-xl font-semibold mb-5'>Recent Project</p>
                     <h2 className='md:text-5xl text-4xl font-bold'>My Portfolio</h2>
