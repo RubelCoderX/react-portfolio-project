@@ -25,7 +25,7 @@ const Skills = () => {
             {/*skills card*/}
             <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8'>
                 {
-                    skills.map(skill => <div key={skill.id} className='bg-bgShade p-8 rounded-lg cursor-pointer hover:translate-y-4 transition-all duration-300 skillcard'>
+                    skills.map(skill => <div key={skill.id} className='bg-bgShade  p-8 rounded-lg cursor-pointer hover:translate-y-4 transition-all duration-300 skillcard'>
                         <img src={skill.image} alt="" className='w-14 h-14 bg-white rounded-lg shadow-md mb-7 p-3 ' />
                         <h3 className='text-2xl font-bold mb-4'>{skill.name}</h3>
                         <p>{skill.description}</p>
